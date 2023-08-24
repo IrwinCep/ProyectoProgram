@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarreraAutos
+namespace AutoCarreras2
 {
     public class AutoCarreras
     {
-        public string modelo;
-        public float peso;
-        public int velocidad;
-        public float gasolina;
-
         static void Main(string[] args)
         {
             AutoCarreras ferrari = new AutoCarreras();
@@ -36,6 +31,13 @@ namespace CarreraAutos
 
             //mando a competir a los coches
             hmnosRodriguez.Competir(ferrari, mcLaren);
+
+            //Le pongo 20l de gas al ferrari
+            ferrari.PonerGas(20);
+            ferrari.Arrancar();
+            mcLaren.Arrancar();
+
+
         }
     }
 }
